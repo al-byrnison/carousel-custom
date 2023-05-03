@@ -1,0 +1,72 @@
+.carousel {
+  padding: 2rem;
+  position: relative;
+  .carousel-container {
+    padding: 0;
+    background-color: #333;
+  }
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+  }
+  .item-container {
+    position: absolute;
+    width: 200%;
+  }
+  .item {
+    display: inline-block;
+    width: 15rem;
+    height: 10rem;
+    background: #fac;
+    position: relative;
+    margin: 0 1rem;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+  .button-area {
+    position: absolute;
+    bottom: -1rem;
+    left: 80%;
+    display: flex;
+    gap: 2rem;
+  }
+  .dots-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+      background-color: #ccc;
+      cursor: pointer;
+
+      &.active {
+        background-color: #654;
+      }
+    }
+  }
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .prev {
+    transform: translateX(-50%);
+    background-color: red;
+  }
+
+  .next {
+    transform: translateX(50%);
+    background-color: blue;
+  }
+}
